@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gym assistant</title>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="gyma.css">
+<style>
+    body{
+        font-family: 'Oswald', sans-serif;
+        color: aliceblue;
+        margin: 0px;
+        padding: 0px;
+        background: url('gym2.png');
+    }
+
+    .left{
+        display: inline-block;
+        position: absolute;
+        left: 34px;
+        top: 20px;
+    }
+    .left img{
+        width: 200px;
+        height: 120px;
+    }
+
+    .mid{
+        display: block;
+        width: 36%;
+        margin: 20px auto;
+    }
+
+    .right{
+        position: absolute;
+        right: 34px;
+        top: 20px;
+        display: inline-block;
+    }
+
+    .navbar{
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 20px;
+
+    }
+    .navbar li a{
+        color: beige;
+        text-decoration: none;
+        padding: 14px 24px;
+    }
+
+    .navbar li a:hover , .avbar li a:active{
+       text-decoration: underline;
+       color: rgb(59, 57, 57);
+    }
+
+    .btn{
+        font-family: 'Oswald', sans-serif;
+        margin: 0px 9px;
+        background-color: black;
+        color: beige;
+        padding: 8px 15px;
+        border-radius: 13px;
+        font-size: 15px;
+        cursor: pointer;
+    }
+
+    .btn:hover{
+        background-color: rgb(62, 61, 61);
+
+    }
+
+    .container{
+        border: 5px solid rgb(0, 0, 0);
+        margin: 140px 34px;
+        padding: 45px 50px;
+        width: 33%;
+        border-radius: 20px;
+    }
+
+    .form-group input{
+        font-family: 'Oswald', sans-serif;
+        text-align: center;
+        display: block;
+        width: 450px;
+        padding: 8px;
+        border-radius: 15px;
+        margin: 10px auto;
+
+    }
+    
+
+</style>
+
+
+
+<body>
+    <header class="header">
+
+        <!--Left box for logo-->
+        <div class="left">
+            <img src="LOGO.png" alt="">
+
+        </div>
+
+         <!--Mid box for navbar-->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active"> Home</a> </li>
+                <li><a href="#"> Diet</a> </li>
+                <li><a href="#"> Routine </a> </li>
+                <li><a href="#"> Tracker</a> </li>
+            </ul>
+        </div>
+
+         <!--Right box for buttons-->
+        <div class="right">
+            <button class="btn">Ask us how</button>
+            <button class="btn">Contact Us</button>
+        </div>
+
+    </header>
+
+    <div class="container">
+        <h1>Let's start our journey</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your height">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your weight">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter the body part you want to target">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your schedule">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your diet requirements">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
